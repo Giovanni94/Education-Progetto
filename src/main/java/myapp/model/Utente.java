@@ -1,18 +1,17 @@
 package myapp.model;
 
-import java.time.LocalDate;
 
 public class Utente {
 
     private int id;
     private String nome;
     private String cognome;
-    private LocalDate dataDiNascita;
+    private String dataDiNascita;
     private String indirizzo;
     private String documentoId;
 
     // Costruttore
-    public Utente(int id, String nome, String cognome, LocalDate dataDiNascita, String indirizzo, String documentoId) {
+    public Utente(int id, String nome, String cognome, String dataDiNascita, String indirizzo, String documentoId) {
         this.id = id;
         this.nome = nome;
         this.cognome = cognome;
@@ -46,11 +45,11 @@ public class Utente {
         this.cognome = cognome;
     }
 
-    public LocalDate getDataDiNascita() {
+    public String getDataDiNascita() {
         return dataDiNascita;
     }
 
-    public void setDataDiNascita(LocalDate dataDiNascita) {
+    public void setDataDiNascita(String dataDiNascita) {
         this.dataDiNascita = dataDiNascita;
     }
 

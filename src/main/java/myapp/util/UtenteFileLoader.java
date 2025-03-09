@@ -23,7 +23,7 @@ public class UtenteFileLoader {
             int id = Integer.parseInt(data[0]);
             String nome = data[1];
             String cognome = data[2];
-            LocalDate dataDiNascita = LocalDate.parse(data[3]);
+            String dataDiNascita = data[3];
             String indirizzo = data[4];
             String documentoId = data[5];
 

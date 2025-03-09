@@ -1,16 +1,15 @@
 package myapp.model;
 
-import java.time.LocalDate;
 
 public class Prenotazione {
     private int id;
     private int idCorso;
     private int idUtente;
-    private LocalDate dataInizio;
-    private LocalDate dataFine;
+    private String dataInizio;
+    private String dataFine;
 
     // Costruttore
-    public Prenotazione(int id, int idCorso, int idUtente, LocalDate dataInizio, LocalDate dataFine) {
+    public Prenotazione(int id, int idCorso, int idUtente, String dataInizio, String dataFine) {
         this.id = id;
         this.idCorso = idCorso;
         this.idUtente = idUtente;
@@ -43,19 +42,19 @@ public class Prenotazione {
         this.idUtente = idUtente;
     }
 
-    public LocalDate getDataInizio() {
+    public String getDataInizio() {
         return dataInizio;
     }
 
-    public void setDataInizio(LocalDate dataInizio) {
+    public void setDataInizio(String dataInizio) {
         this.dataInizio = dataInizio;
     }
 
-    public LocalDate getDataFine() {
+    public String getDataFine() {
         return dataFine;
     }
 
-    public void setDataFine(LocalDate dataFine) {
+    public void setDataFine(String dataFine) {
         this.dataFine = dataFine;
     }
 

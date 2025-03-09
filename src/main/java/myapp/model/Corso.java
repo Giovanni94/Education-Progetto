@@ -1,18 +1,17 @@
 package myapp.model;
 
-import java.time.LocalDate;
 
 public class Corso {
     private int id;
     private String nome;
     private String descrizione;
-    private LocalDate data;
+    private String data;
     private int durataOre;
     private String luogo;
     private boolean disponibile;
 
     // Costruttore
-    public Corso(int id, String nome, String descrizione, LocalDate data, int durataOre, String luogo, boolean disponibile) {
+    public Corso(int id, String nome, String descrizione, String data, int durataOre, String luogo, boolean disponibile) {
         this.id = id;
         this.nome = nome;
         this.descrizione = descrizione;
@@ -47,11 +46,11 @@ public class Corso {
         this.descrizione = descrizione;
     }
 
-    public LocalDate getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(LocalDate data) {
+    public void setData(String data) {
         this.data = data;
     }
 

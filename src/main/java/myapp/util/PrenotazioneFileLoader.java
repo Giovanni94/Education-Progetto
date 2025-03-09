@@ -23,8 +23,8 @@ public class PrenotazioneFileLoader {
             int id = Integer.parseInt(data[0]);
             int corsoId = Integer.parseInt(data[1]);
             int utenteId = Integer.parseInt(data[2]);
-            LocalDate dataInizio = LocalDate.parse(data[3]);
-            LocalDate dataFine = LocalDate.parse(data[4]);
+            String dataInizio = data[3];
+            String dataFine = data[4];
 
             // Aggiungi la prenotazione alla lista
             prenotazioni.add(new Prenotazione(id, corsoId, utenteId, dataInizio, dataFine));
